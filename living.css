@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+#body-header{
+    background-color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 235px;
+}
+.heading{
+    color: #2864cc;
+    font-size: 33px;
+    font-weight: 100;
+    margin: 2px;
+}
+
+#topic{
+    font-size: 0.8rem;
+    font: bold;
+    font-weight: 700;
+    margin-top: -12px;
+    font-family: 'Ubuntu','sans-serif';
+    color: #1792D2;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: rgb(101, 76, 76);
+    margin: auto 1.2rem;
+}
+#nav-bar a:hover{
+   border-bottom: 1px solid black;
+}
+/* Main container */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 5.2vh;
+    margin-left: -25%;
+}
+.heading-picture{
+    
+    width: 34%;
+    height: 200px;
+}
+
+.heading-picture img{
+    width: 100%;
+    height: 100%;
+}
+.time-comment{
+   opacity: 0.4;
+}
+
+/* content container */
+.content{
+    width: 35%;
+    
+    margin-top: 0.99rem;
+
+}
+
+.content-heading{
+    color: #1792D2;
+}
+.text{
+    font-size: 0.9rem;
+    overflow: hidden;
+    opacity: 0.4;
+}
+.continue{
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    
+}
+.continue a{
+    text-decoration: none;
+}
+.border-bottom{
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid lightgray;
+}
+/* sub container */
+.sub-heading-flex{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.logo{
+   margin: 2.4rem 0.4rem;
+   width: 14%;
+   
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.sm-container{
+    width: 18.5%;
+    margin: 0.1rem;
+}
+
+/* aside container */
+ .aside-container{ 
+    position: absolute;
+    width: 208px;  
+    top: 36.1%;
+    left: 68%;
+    margin: auto;
+}
+.aside-border{
+    background-color: #f8f8f8;
+    margin: 0 auto;
+    width: 200px;
+}
+/* about me */
+ .common-about{
+    background-color: white;
+    margin: 2px auto;
+}
+
+.common-about img{
+    width: 100%;
+     
+}
+.aside-heading{
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: #0640a4;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: #12336c;
+    margin-top: 2.2rem;
+   
+    
+}
+.footer-heading{
+    text-align: center;
+    padding: 0.8rem;
+}
+.footer-heading h4,span{
+    color: #1792D2;
+    
+}
+
+@media (max-width: 645px){
+    
+    #body-header{
+        flex-direction: column;
+    }
+    .aside-container{
+        position: relative;
+        left: 0%; 
+           
+    }
+    .aside-border{
+        width: 100%;
+    }
+    
+   
+    .main-container{
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-container div{
+        width: 90%;
+    }
+}
